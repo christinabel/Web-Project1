@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="home-button">
+            <a href="homepage.html"></a>
+            <i class="fa-solid fa-home"></i>
+        </div>
+        <div class="background">
+            <img src="img/HauntedHouse1.jpg" alt="Haunted House">
+        </div>
+
+        <div class="ghost"></div>
+        <div class="ghost2"></div>
+
+        <input type="checkbox" id="inventory-toggle" class="inventory-toggle">
+
+        <label for="inventory-toggle" class="inventory" aria-label="Open Inventory">
+            <i class="fa-solid fa-list"></i>
+        </label>
+
+        <div class="inventory-list">
+            <div class="inventory-item">
+                Flashlight
+                <input type="checkbox" id="flashlight-toggle">
+                <label for="flashlight-toggle">
+                    <img src="img/flashlight.png" class="item-image" alt="Flashlight">
+                </label>
+            </div>
+            <div class="inventory-item">
+                Key
+                <input type="checkbox" id="key-toggle">
+                <label for="key-toggle">
+                    <img src="img/key.png" class="item-image" alt="Key">
+                </label>
+            </div>
+            <div class="inventory-item">
+                Anicent Book
+                <input type="checkbox" id="book-toggle">
+                <label for="book-toggle">
+                    <img src="img/book.png" class="item-image" alt="Anicent Book">
+                </label>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
