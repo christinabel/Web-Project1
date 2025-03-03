@@ -13,6 +13,10 @@ h1 {
     margin: 20px;
 }
 
+h1:hover {
+    animation: title 10s 0.5s infinite;
+}
+
 #main {
     position: relative;
     z-index: 1;
@@ -51,7 +55,7 @@ h1 {
 }
 
 #start:hover {
-    animation: buttonidle 5s ease-in-out infinite;
+    animation: buttonidle 2s ease-in-out infinite;
     background-color: cornflowerblue;
 }
 
@@ -132,10 +136,29 @@ h1 {
 
 @keyframes buttonidle {
     0% {
-        scale: 1;
+        scale: 100%;
     }
 
-    10% {
-        scale: 0.85;
+    50% {
+        scale: 95%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+@keyframes title {
+    0% {
+        background-color: #0c2629;
+    }
+
+    50% {
+        background-color: aliceblue;
+
+    }
+
+    100% {
+        background-color: #0c2629;
     }
 }
