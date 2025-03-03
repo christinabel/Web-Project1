@@ -1,0 +1,151 @@
+body {
+    background-image: url(img/dark_trees.webp);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: white 0px 5px 5px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 20px;
+}
+
+#main {
+    position: relative;
+    z-index: 1;
+    margin-left: 10%;
+    background-image: linear-gradient(to bottom, rgb(88, 115, 119, 0.9), rgb(4, 6, 6, 1));
+    width: 80%;
+    min-height: 100vh;
+    border-radius: 5px;
+    box-shadow: white 0px 5px 5px;
+}
+
+#playerinput {
+    text-align: center;
+    border-bottom: 3px double #0c2629;
+    margin: 2px;
+}
+
+#button {
+    margin-left: 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#start {
+    background-color: #0c2629;
+    color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers text horizontally */
+    align-items: center;
+    /* Centers text vertically */
+    text-decoration: none;
+    width: 75px;
+    height: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+#start:hover {
+    animation: buttonidle 5s ease-in-out infinite;
+    background-color: cornflowerblue;
+}
+
+#mhimg {
+    width: 100%;
+    height: 400px;
+}
+
+#bottom-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 20px;
+    margin: 20px;
+}
+
+.textbox {
+    font-family: Impact;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+#todo {
+    padding-bottom: 40px;
+}
+
+#descimg {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.person {
+    position: fixed;
+    bottom: -20px;
+    right: 20px;
+    animation: slideInFromBottom 1.5s ease-out forwards;
+    z-index: 2;
+    /* Lower than other foreground elements, but above background */
+    width: 200px;
+    /* Adjust size */
+}
+
+.ghoul {
+    position: fixed;
+    bottom: -20px;
+    left: 20px;
+    animation: slideInFromBottom 1.5s ease-out forwards;
+    z-index: 2;
+    /* Lower than other foreground elements, but above background */
+    width: 200px;
+    /* Adjust size */
+}
+
+.bottomimg {
+    background-image: url(img/grass-removebg.png);
+    background-repeat: repeat-x;
+    z-index: 3;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 300px;
+
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100vh);
+        /* Start from below the viewport */
+        opacity: 0;
+        /* Optional: Fade in effect */
+    }
+
+    to {
+        transform: translateY(0);
+        /* End at its normal position */
+        opacity: 1;
+    }
+}
+
+@keyframes buttonidle {
+    0% {
+        scale: 1;
+    }
+
+    10% {
+        scale: 0.85;
+    }
+}
