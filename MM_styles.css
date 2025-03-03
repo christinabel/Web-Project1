@@ -41,11 +41,8 @@ h1 {
     color: aliceblue;
     border-radius: 5px;
     display: flex;
-    /* Enables flexbox */
     justify-content: center;
-    /* Centers text horizontally */
     align-items: center;
-    /* Centers text vertically */
     text-decoration: none;
     width: 75px;
     height: 50px;
@@ -98,9 +95,7 @@ h1 {
     right: 20px;
     animation: slideInFromBottom 1.5s ease-out forwards;
     z-index: 2;
-    /* Lower than other foreground elements, but above background */
     width: 200px;
-    /* Adjust size */
 }
 
 .ghoul {
@@ -109,9 +104,7 @@ h1 {
     left: 20px;
     animation: slideInFromBottom 1.5s ease-out forwards;
     z-index: 2;
-    /* Lower than other foreground elements, but above background */
     width: 200px;
-    /* Adjust size */
 }
 
 .bottomimg {
@@ -128,14 +121,11 @@ h1 {
 @keyframes slideInFromBottom {
     from {
         transform: translateY(100vh);
-        /* Start from below the viewport */
         opacity: 0;
-        /* Optional: Fade in effect */
     }
 
     to {
         transform: translateY(0);
-        /* End at its normal position */
         opacity: 1;
     }
 }
